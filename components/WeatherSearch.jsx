@@ -18,8 +18,8 @@ const WeatherSearch = (props) => {
   };
 
   const getCoordinates = async (city) => {
-    const apiKey = process.env.COORDS_API_KEY;
-
+    const apiKey = import.meta.env.VITE_COORDS_API_KEY;
+    console.log(apiKey)
     try {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/geocoding?city=${city}`,

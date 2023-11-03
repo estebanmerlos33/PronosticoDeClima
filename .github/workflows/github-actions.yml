@@ -29,4 +29,4 @@ jobs:
           echo "My secret: $COORDS_API_KEY"
 
         env:
-          COORDS_API_KEY: ${{ secrets.COORDS_API_KEY }}
+          VITE_COORDS_API_KEY: ${{ secrets.COORDS_API_KEY }}
