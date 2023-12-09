@@ -16,12 +16,17 @@ function App() {
     setShownWeather(updatedWeather);
   };
 
+  const showErrorMessage = () => {
+    console.log("La ciudad ingresada no es válida")
+  }
+
   return (
     <>
       <WeatherSearch
         cityInput={cityInput}
         handleSearch={handleSearch}
         handleInputChange={handleInputChange}
+        showErrorMessage = {showErrorMessage}
       ></WeatherSearch>
       <WeatherBoard shownWeather={shownWeather}></WeatherBoard>
     </>
