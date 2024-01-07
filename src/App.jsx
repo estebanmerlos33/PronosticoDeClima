@@ -1,5 +1,6 @@
 import WeatherSearch from "../components/WeatherSearch.jsx";
 import WeatherBoard from "../components/WeatherBoard.jsx";
+import WeatherIcons from "../components/WeatherIcons.jsx";
 import "./App.css";
 import { useState } from "react";
 
@@ -17,8 +18,8 @@ function App() {
   };
 
   const showErrorMessage = () => {
-    console.log("La ciudad ingresada no es válida")
-  }
+    console.log("La ciudad ingresada no es válida");
+  };
 
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
         cityInput={cityInput}
         handleSearch={handleSearch}
         handleInputChange={handleInputChange}
-        showErrorMessage = {showErrorMessage}
+        showErrorMessage={showErrorMessage}
       ></WeatherSearch>
       <WeatherBoard shownWeather={shownWeather}></WeatherBoard>
     </>
