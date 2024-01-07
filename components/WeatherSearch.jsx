@@ -111,7 +111,8 @@ const WeatherSearch = (props) => {
   };
 
   const getCoordinates = async (city) => {
-    const apiKey = import.meta.env.VITE_COORDS_API_KEY;
+    //const apiKey = import.meta.env.VITE_COORDS_API_KEY;
+    const apiKey = "Rn83GNo+8YEZHpF0LDiXDA==ZnabpQj1Aw5ZZyny";
     try {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/geocoding?city=${city}`,
