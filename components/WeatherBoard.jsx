@@ -3,12 +3,15 @@ const WeatherBoard = (props) => {
 
   let weatherClassName;
   switch (props.shownWeather) {
-    case "Clear sky" || "Mainly clear":
-      weatherClassName = "clear";
+    case "Clear sky":
+      weatherClassName = "sunny";
+      break;
+      case "Mainly clear":
+      weatherClassName = "mostlysunny";
       break;
 
-    case "Mainly clear" || "Partly cloudy":
-      weatherClassName = "partlycloudy";
+    case "Partly cloudy":
+      weatherClassName = "mostlycloudy";
       break;
 
     case "Overcast":
